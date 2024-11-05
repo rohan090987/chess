@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Login Form</title>
+  <style>
+    /* Login Page Styles */
+
+    .main {
+      width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    body {
+      font-family: Copperplate, Fantasy ;
+      background-color: #f7f7f7;
+    }
+ 
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 94%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #aaa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrap {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: #337ab7;
+    }
+
+    a:hover {
+      color: #23527c;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Board masters</h1>
+    <h3>Enter your login credentials</h3>
+    <form action="">
+      <input type="text" 
+             id="first" 
+             name="first" 
+             placeholder="Enter your Username" required>
+      <br>
+      <input type="password" 
+             id="password" 
+             name="password" 
+             placeholder="Enter your Password" required>
+      <div class="wrap">
+        <button type="submit" onclick="window.location.href='chessboard.html'">Submit</button>
+      </div>
+    </form>
+    <p>Not registered? <a href="../registration/registration.html">Create an account</a>.</p>
+  </div>
+</body>
+</html>
